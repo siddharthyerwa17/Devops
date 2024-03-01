@@ -1,0 +1,17 @@
+#####################################
+#Author - Siddharth
+
+
+#!/bin/bash
+echo "Rotating logs..."
+# Log rotation commands here
+echo "Log rotation complete."
+logrotate (gzip,zip)
+
+# Describe instances on AWS
+echo "Instances running"
+aws ec2 describe-instances
+
+#Describe IAM user
+echo "IAM user on AWS"
+aws iam list-users 
